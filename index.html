@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAKHI Foundation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #202124;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Perfectly centered layout for the video */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem;
+        }
+
+        /* Video Logo Frame */
+        .logo-container {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #000000;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Ultra-minimal seamless footer */
+        footer {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        /* Line 1: Branding, Acronym & Status Notice */
+        .footer-line-1 {
+            font-size: 0.95rem;
+            color: #202124;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .brand-punjabi {
+            font-weight: 500;
+            color: #1a73e8; /* Google Accent Blue */
+        }
+
+        .brand-english {
+            font-weight: 500;
+        }
+
+        .separator {
+            color: #dadce0;
+        }
+
+        .acronym-text span {
+            font-weight: 600;
+            color: #1a73e8;
+        }
+
+        .status-notice {
+            color: #ea4335; /* Google Red for notice */
+            font-size: 0.85rem;
+            font-weight: 500;
+            background-color: #fce8e6;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* Line 2: Corporate details and contact */
+        .footer-line-2 {
+            font-size: 0.85rem;
+            color: #70757a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .email-link {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile scaling adjustments */
+        @media (max-width: 600px) {
+            .logo-container {
+                width: 180px;
+                height: 180px;
+            }
+            .footer-line-1, .footer-line-2 {
+                flex-direction: column;
+                gap: 6px;
+            }
+            .separator {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="logo-container">
+            <video autoplay loop muted playsinline>
+                <source src="logo-intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-line-1">
+            <span class="brand-punjabi">ਸਾਖੀ</span>
+            <span class="brand-english">SAAKHI</span>
+            <span class="separator">•</span>
+            <span class="acronym-text">
+                <span>S</span>tudent <span>A</span>ctivism and <span>A</span>dvocacy for <span>K</span>nowledge, <span>H</span>umanity and <span>I</span>mpact
+            </span>
+            <span class="separator">•</span>
+            <span class="status-notice">Website Under Construction</span>
+        </div>
+        
+        <div class="footer-line-2">
+            <span>SAAKHI Foundation</span>
+            <span class="separator">|</span>
+            <a href="mailto:info@saakhi.org" class="email-link">info@saakhi.org</a>
+            <span class="separator">|</span>
+            <span>&copy; 2026 All Rights Reserved</span>
+        </div>
+    </footer>
+
+</body>
+</html>
